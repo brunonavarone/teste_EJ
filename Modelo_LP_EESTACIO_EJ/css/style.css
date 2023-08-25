@@ -1,9 +1,17 @@
+/*configuracao para resetar todas as configuracoes que iniciais do HTML */
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+/*deixando o movimento de rolamento da tela mais suave*/
+html, body{
+    scroll-behavior: smooth
+}
+
+/*estilizacao do ID TOPO
+ */
 #topo{
     background-image: url(../imgs/escritorio.jpg);
     background-size: cover;
@@ -13,23 +21,25 @@
     
 }
 
+/*estilizacao da classe container-nav (definindo o tamanho)*/
 .container-nav{
     width: 100%;
     display: flex;
-    
 }
 
+/*estilizacao da lista de navegacao*/
 .container-ul-nav{
     background-color: rgba(0, 0, 0, 0.7); /* Valor de opacidade: 0.5 */
-    display: flex;
-    align-items: center;
-    justify-content: end;
     width: 100%;
     height: 60px;
-    flex-direction: row;
     gap: 40px;
     padding: 20px;
     position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
 }
 
 .container-ul-nav a{
@@ -38,6 +48,149 @@
     font-size: 1.2rem;
 }
 
+.container-ul-nav a:hover{
+    color: #ecce96;
+}
+
 .container-ul-nav li{
     list-style: none;
+}
+
+/*INICIO DA SECTION SOBRE*/
+
+#sobre{
+    width: 100%;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCF0D9;
+}
+
+#sobre h3{
+    margin: 40px 0px;
+    font-size: 1.4rem;
+}
+
+.cartao-texto{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cartao-texto p {
+    font-size: 1.2rem;
+}
+
+.cartao-texto img{
+    max-width: 500px;
+    max-height: 400px;
+    
+}
+
+#servicos{
+    background-color: #f1f2f2;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos h3{
+    font-size: 1.4rem;
+}
+
+.container-cartao-servicos{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+}
+
+.container-cartao-servicos img{
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.cartao-servicos{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: solid 1px black; 
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.cartao-servicos h4{
+    font-size: 1.2rem;
+}
+
+.cartao-servicos p{
+    max-width: 70%;
+    text-align: justify;
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+
+/*inicio da section contato*/
+#contato{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #FCF0D9;
+}
+
+#contato h3{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+}
+
+#formulario{
+    width: 500px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: #f1f2f2;
+    
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-input input{
+    padding: 5px;
+}
+.container-text-area{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding-top: 60px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p{
+    color: aliceblue;
+}
+
+.mapa-container{
+    max-width: 300px;
 }

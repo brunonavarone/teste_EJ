@@ -28,48 +28,64 @@
     </header>
     <main>
         <section id="sobre">
+            <h3>Sobre</h3>
             <div class="cartao-texto">
-                <h3>Sobre</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quibusdam saepe soluta illum eos excepturi, labore unde consequuntur beatae, dolorem est ab vel iure eligendi vitae illo eveniet porro provident deserunt. Iste provident odio eveniet quasi in veniam ut explicabo illum minima dolorum! Inventore, eligendi est autem possimus perferendis illum ut sunt accusamus veniam aut animi nesciunt in dicta delectus eos libero dignissimos veritatis pariatur tempore, praesentium illo, recusandae distinctio. Aliquid ratione deserunt optio perferendis? Consectetur, praesentium. Esse cum aut aspernatur est delectus voluptates modi aperiam nulla rerum excepturi sunt quibusdam doloribus provident debitis, et amet distinctio, optio molestiae. Corrupti?</p>
+                <img src="./imgs/office_1.jpg" alt="">
             </div>
-            <img src="#" alt="">
         </section>
 
         <section id="servicos">
             <h3>Serviços</h3>
-            <div class="cartao-servicos">
-                <img src="" alt="">
-                <h4>Serviço 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam quos voluptatum possimus iure? Totam dicta vel perferendis reprehenderit tenetur amet velit consectetur excepturi iusto, non dolore obcaecati laborum veniam.</p>
-            </div>
-            <div class="cartao-servicos">
-                <img src="" alt="">
-                <h4>Serviço 2</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad corrupti harum quasi earum cumque fugit vel ipsum dolores? Ad aliquid perferendis cupiditate natus minima obcaecati sed explicabo eveniet officiis quos.</p>
-            </div>
-            <div class="cartao-servicos">
-                <img src="" alt="">
-                <h4>Serviço 3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, quis aperiam quidem temporibus cupiditate asperiores nemo obcaecati illo iusto nobis magni labore, ad dolore neque. Dolorum officiis similique voluptas facilis!</p>
+            <div class="container-cartao-servicos">
+                <div class="cartao-servicos">
+                    <img src="./imgs/servico_1.jpg" alt="">
+                    <h4>Serviço 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam quos voluptatum possimus iure? Totam dicta vel perferendis reprehenderit tenetur amet velit consectetur excepturi iusto, non dolore obcaecati laborum veniam.</p>
+                </div>
+                <div class="cartao-servicos">
+                    <img src="./imgs/servico_2.jpg" alt="">
+                    <h4>Serviço 2</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad corrupti harum quasi earum cumque fugit vel ipsum dolores? Ad aliquid perferendis cupiditate natus minima obcaecati sed explicabo eveniet officiis quos.</p>
+                </div>
+                <div class="cartao-servicos">
+                    <img src="./imgs/servico_3.jpg" alt="">
+                    <h4>Serviço 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, quis aperiam quidem temporibus cupiditate asperiores nemo obcaecati illo iusto nobis magni labore, ad dolore neque. Dolorum officiis similique voluptas facilis!</p>
+                </div>
             </div>
         </section>
 
         <section id="contato">
             <h3>Contato</h3>
-            <form action="#">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+            <form action="#" id="formulario">
+                <div class="container-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+                </div>
 
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone">
+                <div class="container-input">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone">
+                </div>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Insira seu E-mail">
+                <div class="container-input">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu E-mail">
+                </div>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe aqui sua mensagem..."></textarea>
+                <div class="container-input container-text-area">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe aqui sua mensagem..."></textarea>
+                </div>
             </form>
         </section>
     </main>
+    <footer>
+        <p>NOME DA EMPRESA</p>
+        <div class="mapa-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3675.015299196208!2d-43.20877202536819!3d-22.91280653808495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1692926916465!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
 </body>
 </html>
